@@ -1,0 +1,39 @@
+﻿<Window x:Name="mainWindow" x:Class="FanoAndHuffman.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FanoAndHuffman"
+        mc:Ignorable="d"
+        Title="Shannon Fano and Huffman En/De-Code" Height="459.83" Width="814" ResizeMode="NoResize" Initialized="mainWindow_Initialized">
+    <Grid>
+        <Label x:Name="fanoTitleLabel" Content="Shannon Fano" HorizontalAlignment="Left" Margin="139,10,0,0" VerticalAlignment="Top" FontFamily="Segoe UI Semibold" FontSize="16"/>
+        <Label x:Name="fanoTitleLabel_Copy" Content="Huffman" HorizontalAlignment="Left" Margin="561,10,0,0" VerticalAlignment="Top" FontFamily="Segoe UI Semibold" FontSize="16"/>
+        <Separator HorizontalAlignment="Left" Height="10" Margin="10,41,0,0" VerticalAlignment="Top" Width="381"/>
+        <Separator HorizontalAlignment="Left" Height="10" Margin="405,41,0,0" VerticalAlignment="Top" Width="381"/>
+        <Separator HorizontalAlignment="Left" Height="16" Margin="196,205,0,0" VerticalAlignment="Top" Width="404" RenderTransformOrigin="0.5,0.5">
+            <Separator.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="90"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Separator.RenderTransform>
+        </Separator>
+        <TextBox x:Name="fanoInputTextBox" HorizontalAlignment="Left" Height="48" Margin="10,94,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="381"/>
+        <TextBox x:Name="huffmanInputTextBox" HorizontalAlignment="Left" Height="48" Margin="405,94,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="381"/>
+        <Label x:Name="fanoTitleLabel_Copy1" Content="Encode" HorizontalAlignment="Left" Margin="10,159,0,0" VerticalAlignment="Top" FontFamily="Segoe UI Semibold" FontSize="14"/>
+        <Label x:Name="fanoTitleLabel_Copy2" Content="Encode" HorizontalAlignment="Left" Margin="405,159,0,0" VerticalAlignment="Top" FontFamily="Segoe UI Semibold" FontSize="14"/>
+        <TextBox x:Name="fanoEncodeTextBox" HorizontalAlignment="Left" Height="48" Margin="10,193,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="381" IsEnabled="False"/>
+        <TextBox x:Name="huffmanEncodeTextBox" HorizontalAlignment="Left" Height="48" Margin="405,193,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="381" IsEnabled="False"/>
+        <Label x:Name="fanoTitleLabel_Copy3" Content="Decode" HorizontalAlignment="Left" Margin="10,251,0,0" VerticalAlignment="Top" FontFamily="Segoe UI Semibold" FontSize="14"/>
+        <Label x:Name="fanoTitleLabel_Copy4" Content="Decode" HorizontalAlignment="Left" Margin="405,251,0,0" VerticalAlignment="Top" FontFamily="Segoe UI Semibold" FontSize="14"/>
+        <TextBox x:Name="fanoDecodeTextBox" HorizontalAlignment="Left" Height="48" Margin="10,285,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="381" IsEnabled="False"/>
+        <TextBox x:Name="huffmanDecodeTextBox" HorizontalAlignment="Left" Height="48" Margin="405,285,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="381" IsEnabled="False"/>
+        <Label x:Name="fanoTitleLabel_Copy5" Content="Input" HorizontalAlignment="Left" Margin="10,60,0,0" VerticalAlignment="Top" FontFamily="Segoe UI Semibold" FontSize="14"/>
+        <Label x:Name="fanoTitleLabel_Copy6" Content="Input" HorizontalAlignment="Left" Margin="405,60,0,0" VerticalAlignment="Top" FontFamily="Segoe UI Semibold" FontSize="14"/>
+        <Button x:Name="fanoExecuteButton" Content="Do Fano" HorizontalAlignment="Left" Margin="10,351,0,0" VerticalAlignment="Top" Width="381" Height="34"/>
+        <Button x:Name="huffmanExecuteButton" Content="Do Huffman" HorizontalAlignment="Left" Margin="405,351,0,0" VerticalAlignment="Top" Width="381" Height="34" Click="huffmanExecuteButton_Click"/>
+    </Grid>
+</Window>
